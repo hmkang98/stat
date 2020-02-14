@@ -1,0 +1,31 @@
+﻿<h2 ALIGN=center>단일 표본 : effect size가 결정되지 않았을 경우(가설 이용)의 표본수 계산</H2><hr>
+<p><h2 ALIGN=center>two-sided</H2>
+
+<table width=70%  border=0 cellspacing=1 cellpadding="0" align="center">
+<tr>
+ <td bgColor="red">
+ <table width=100% border="0" cellspacing="1" cellpadding="10" align="center">
+ <TR BGCOLOR=#F5F5F5> <TH> 유의수준(α)와 검정력(β),effect size를 알고 있을 경우의 양측 표본수 계산 <p>
+<TABLE BORDER=0>
+ <FORM ACTION=php_sources/ss1122.php METHOD=post>
+
+<TR> <TH> 유의 수준(α) <TD> <INPUT TYPE=text NAME=alpha value="0.05"> 
+ <TR> <TH> 검정력(β)  <TD>  <INPUT TYPE=text NAME=beta value="0.9">
+  <TR> <TH> 귀무가설(μ=μ<sub>0</sub>) <TD>  <INPUT TYPE=text NAME=ovalue value="10">
+ <TR> <TH> 대립가설(μ=μ<sub>1</sub>) <TD>  <INPUT TYPE=text NAME=alter value="9">
+ <TR> <TH> 분산(σ²)  <TD> <INPUT TYPE=text NAME=sigma2 value="25">
+ <TR> <TD COLSPAN=2 ALIGN=CENTER> <INPUT TYPE=submit VALUE="표본수 계산">
+</TABLE>
+</FORM>
+ </TD>
+ </tr>
+</TABLE>
+</TD>
+</tr>
+</table><hr>
+<?
+$htmlfile = "announce3.html";
+$fp = fopen($htmlfile, "r");
+$html = fread($fp, filesize($htmlfile));
+echo($html);
+?>

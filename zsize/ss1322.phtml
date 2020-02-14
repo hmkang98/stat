@@ -1,0 +1,31 @@
+﻿<h2 ALIGN=center>독립인 두 표본 : 비율의 표본수 계산</H2><hr>
+<p><h2 ALIGN=center>two-sided</H2>
+
+<table width=70%  border=0 cellspacing=1 cellpadding="0" align="center">
+<tr>
+ <td bgColor="red">
+ <table width=100% border="0" cellspacing="1" cellpadding="10" align="center">
+ <TR BGCOLOR=#F5F5F5> <TH> 유의수준(α)와 검정력(β), H<sub>0</sub>에서 성공확률 성공확률(p=p<sub>0</sub>), H<sub>1</sub>에서 그룹 1의 성공확률(p=p<sub>1</sub>), H<sub>1</sub>에서 그룹 2의 성공확률(p=p<sub>2</sub>)를 알고 있을 경우의 양측 검정력 계산 <p>
+<TABLE BORDER=0>
+ <FORM ACTION=php_sources/ss1322.php METHOD=post>
+
+<TR> <TH> 유의수준(α) <TD> <INPUT TYPE=text NAME=alpha value="0.05"> 
+ <TR> <TH> 검정력(β)  <TD>  <INPUT TYPE=text NAME=beta value="0.9">
+<TR> <TH> H<sub>0</sub>에서 성공확률(p=p<sub>1</sub>=p<sub>2</sub>)  <TD>  <INPUT TYPE=text NAME=p0 value="0.45">
+<TR> <TH> H<sub>1</sub>에서 그룹 1의 성공확률(p<sub>1</sub>)  <TD>  <INPUT TYPE=text NAME=p1 value="0.5">
+<TR> <TH> H<sub>1</sub>에서 그룹 2의 성공확률(p<sub>2</sub>)  <TD>  <INPUT TYPE=text NAME=p2 value="0.4">
+<TR> <TD COLSPAN=2 ALIGN=CENTER> <INPUT TYPE=submit VALUE="표본수 계산">
+</TABLE>
+</FORM>
+ </TD>
+ </tr>
+</TABLE>
+</TD>
+</tr>
+</table><hr>
+<?
+$htmlfile = "announce3.html";
+$fp = fopen($htmlfile, "r");
+$html = fread($fp, filesize($htmlfile));
+echo($html);
+?>

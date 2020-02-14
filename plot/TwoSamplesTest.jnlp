@@ -1,0 +1,29 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?> 
+	<!-- JNLP File for JFrame Demo Application --> 
+	<jnlp 
+  	  spec="1.0+" 
+	  <!--codebase="file:///C:/Users/xnote/Desktop/Estimation_Testing"-->
+	  href="TwoSamplesTest.jnlp"> 
+  	  <information> 
+    	    <title> Test for difference means</title> 
+    	    <vendor>Department of Statistics Hallym Univ.</vendor> 
+    	      <homepage href="http://pluto.hallym.ac.kr"/> 
+              <icon width=50 height=70 href="javalogo.gif"/>
+    	      <description>Test for difference means</description> 
+    	      <description kind="short">Test for difference means</description> 
+              <description kind="one-line">Test for difference means</description>
+              <description kind="desktop">Test for difference means</description>
+              <description kind="tooltip">Test for difference means</description>
+    	    <offline-allowed/> 
+  	  </information> 
+  	  <!-- allow all permissions -->
+	  <security> 
+	    <all-permissions/> 
+	  </security>   	  
+  	  <resources> 
+	    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+            <jar href="SignedTwoSamplesTest.jar"/> 
+          </resources> 
+          <application-desc name="test for difference means" main-class="TwoSamplesTest"/> 
+          <update check="background"/>
+          </jnlp>

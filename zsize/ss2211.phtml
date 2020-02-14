@@ -1,0 +1,29 @@
+﻿<h2 ALIGN=center>독립인 두 표본 : effect size가 결정된 경우의 검정력 계산</H2><hr>
+<p><h2 ALIGN=center>one-sided : μ<sub>1</sub>> μ<sub>2</sub>인 경우</H2>
+
+<table width=70%  border=0 cellspacing=1 cellpadding="0" align="center">
+<tr>
+ <td bgColor="red">
+ <table width=100% border="0" cellspacing="1" cellpadding="10" align="center">
+ <TR BGCOLOR=#F5F5F5> <TH> 유의수준(α)와 effect size, 표본수를 알고 있을 경우의 단측 검정력 계산 <p>
+<TABLE BORDER=0>
+ <FORM ACTION=php_sources/ss2211.php METHOD=post>
+
+<TR> <TH> 유의수준(α) <TD> <INPUT TYPE=text NAME=alpha value="0.05">
+  <TR> <TH> effect size  <TD>  <INPUT TYPE=text NAME=es value="0.2">
+ <TR> <TH> 표본수  <TD>  <INPUT TYPE=text NAME=n value="100">
+ <TR> <TD COLSPAN=2 ALIGN=CENTER> <INPUT TYPE=submit VALUE="검정력 계산">
+</TABLE>
+</FORM>
+ </TD>
+ </tr>
+</TABLE>
+</TD>
+</tr>
+</table><hr>
+<?
+$htmlfile = "announce3.html";
+$fp = fopen($htmlfile, "r");
+$html = fread($fp, filesize($htmlfile));
+echo($html);
+?>

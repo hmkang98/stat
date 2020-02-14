@@ -1,0 +1,26 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?
+<!-- JNLP File for JFrame Demo Application --> 
+<jnlp 
+  spec="1.0+" href="RandomBivariateNormal.jnlp"> 
+  <information> 
+    <title>Simulation of Correlation Coefficient</title> 
+    <vendor>Department of Statistics Hallym Univ.</vendor> 
+      <homepage href="http://pluto.hallym.ac.kr"/> 
+      <!icon width=50 height=70 href="http://pluto.hallym.ac.kr/plot/javalogo.gif"/>
+      <description> Correlation </description> 
+      <description kind="short">Corr</description> 
+      <description kind="one-line">Correlation Coefficient </description>
+      <description kind="tooltip">Simulation of Correlation Coefficient</description>
+    <offline-allowed/> 
+  </information> 
+  <!-- allow all permissions -->
+  <security> 
+    <all-permissions/> 
+  </security>   	  
+  <resources> 
+    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+    <jar href="SignedRandomBivariateNormal.jar"/> 
+  </resources> 
+  <application-desc main-class="RandomBivariateNormal"/> 
+  <update check="background"/>
+  </jnlp>

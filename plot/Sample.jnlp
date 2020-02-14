@@ -1,0 +1,26 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?> 
+	<!-- JNLP File for JFrame Demo Application --> 
+	<jnlp 
+  	  spec="1.0+" href="Sample.jnlp"> 
+  	  <information> 
+    	    <title>Polynomial Regression vs Cubic Spline</title> 
+    	    <vendor>Department of Statistics Hallym Univ.</vendor> 
+    	      <homepage href="http://pluto.hallym.ac.kr"/> 
+              <!--icon width=50 height=70 href="pluto.hallym.ac.kr/plot/jaws.gif"/-->
+    	      <description>Polynomil Regression vs Cubic Spline</description> 
+    	      <description kind="short">Reg & Spline</description> 
+              <description kind="one-line">Polynomial Regression vs Cubic Spline </description>
+              <description kind="tooltip">Reg & Spline</description>
+    	    <offline-allowed/> 
+  	  </information> 
+  	  <!-- allow all permissions -->
+	  <security> 
+	    <all-permissions/> 
+	  </security>
+  	  <resources> 
+	    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+            <jar href="SignedSample.jar"/> 
+          </resources> 
+          <application-desc name="Regression model" main-class="Sample"/> 
+          <update check="background"/>
+          </jnlp>

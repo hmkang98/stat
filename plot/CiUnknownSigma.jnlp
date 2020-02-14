@@ -1,0 +1,27 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?> 
+	<!-- JNLP File for JFrame Demo Application --> 
+	<jnlp 
+  	  spec="1.0+" 
+	  href="CiUnknownSigma.jnlp"> 
+  	  <information> 
+    	    <title> Confidence Interval for mu when sigma is known</title> 
+    	    <vendor>Department of Statistics Hallym Univ.</vendor> 
+    	      <homepage href="http://pluto.hallym.ac.kr"/> 
+              <icon width=50 height=70 href="javalogo.gif"/>
+    	      <description>Confidence Interval for mu when sigma is known</description> 
+    	      <description kind="short">CI known sigma</description> 
+              <description kind="one-line"> CI known sigma </description>
+              <description kind="tooltip">CI known sigma</description>
+    	    <offline-allowed/> 
+  	  </information> 
+  	  <!-- allow all permissions -->
+	  <security> 
+	    <all-permissions/> 
+	  </security>   	  
+  	  <resources> 
+	    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+            <jar href="SignedCiUnknownSigma.jar"/> 
+          </resources> 
+          <application-desc name=SignedCiUnknownSigma.jar width=1 height=1 main-class="CiUnknownSigma"/> 
+          <update check="background"/>
+          </jnlp>

@@ -1,0 +1,26 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?> 
+<!-- JNLP File for JFrame Demo Application --> 
+<jnlp 
+  spec="1.0+" href="Regression.jnlp"> 
+  <information> 
+    <title> Corrlelation Coefficient and Simple Regression</title> 
+    <vendor>Department of Statistics Hallym Univ.</vendor> 
+      <homepage href="http://pluto.hallym.ac.kr"/> 
+      <icon width=50 height=70 href="javalogo.gif"/>
+      <description>Corrlelation Coefficient and Simple Regression</description> 
+      <description kind="short">Corr & Reg</description> 
+      <description kind="one-line"> Corr & Reg </description>
+      <description kind="tooltip">Corr & Simple Reg</description>
+    <offline-allowed/> 
+  </information> 
+  <!-- allow all permissions -->
+  <security> 
+    <all-permissions/> 
+  </security>   	  
+  <resources> 
+    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+    <jar href="SignedRegression.jar"/> 
+  </resources> 
+  <application-desc name="Regression" main-class="RegFrame"/> 
+  <update check="background"/>
+  </jnlp>

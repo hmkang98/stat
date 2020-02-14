@@ -1,0 +1,26 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?> 
+<!-- JNLP File for JFrame Demo Application --> 
+<jnlp 
+  spec="1.0+" href="Power.jnlp"> 
+  <information> 
+    <title> Power Graph</title> 
+    <vendor>Department of Statistics Hallym Univ.</vendor> 
+      <homepage href="http://pluto.hallym.ac.kr"/> 
+      <icon width=50 height=70 href="javalogo.gif"/>
+      <description>Power</description> 
+      <description kind="short">Power</description> 
+      <description kind="one-line">Power</description>
+      <description kind="tooltip">Power</description>
+    <offline-allowed/> 
+  </information> 
+  <!-- allow all permissions -->
+  <security> 
+    <all-permissions/> 
+  </security>   	  
+  <resources> 
+    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+    <jar href="SignedPower.jar"/> 
+  </resources> 
+  <application-desc name=SignedPower.jar main-class="Power"/> 
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,26 @@
+﻿<!xml version="1.0" encoding="EUC-KR"?> 
+	<!-- JNLP File for JFrame Demo Application --> 
+	<jnlp 
+  	  spec="1.0+" href="NormalQP.jnlp"> 
+  	  <information> 
+    	    <title> A quantile and P-value for the normal distribution with a mean and SD sigma</title> 
+    	    <vendor>Department of Statistics Hallym Univ.</vendor> 
+    	      <homepage href="http://pluto.hallym.ac.kr"/> 
+              <icon width=50 height=70 href="javalogo.gif"/>
+    	      <description>Quantile and P-value for the normal</description> 
+    	      <description kind="short">Quantile and P-value for the normal</description> 
+              <description kind="one-line">Quantile and P-value for the normal</description>
+              <description kind="tooltip">Quantile and P-value for the normal</description>
+    	    <offline-allowed/> 
+  	  </information> 
+  	  <!-- allow all permissions -->
+	  <security> 
+	    <all-permissions/> 
+	  </security>   	  
+  	  <resources> 
+	    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
+            <jar href="SignedNormalQP.jar"/> 
+          </resources> 
+          <application-desc name=SignedNormalQP.jar main-class="NormalQP"/> 
+          <update check="background"/>
+          </jnlp>
