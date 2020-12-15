@@ -9,6 +9,20 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <script type="text/javascript" language="javascript">var s_code=s.t();if(s_code)document.write(s_code)</script>
 <!-- End SiteCatalyst code -->
 <script src="https://www.java.com/js/deployJava.js"></script>
+<script type="text/javascript">
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 <STYLE TYPE=TEXT/CSS>
   B{background-color:dfdfdf;color:blue}
   A:link{color:blue; text-decoration:none}
@@ -51,9 +65,11 @@ A browser with JavaScript enabled is required for this page to operate properly.
        <li><b>Demo Data</b> : 자료를 생성하는 메뉴이다. <br>
        <ul>
           <li><b>Random data from special function</b> : 이 메뉴는 자료가 없는 경우 또는 데모용으로 
-           만들어진 메뉴로 난수의 생성은<p> 
-           <center><img src=eqn_02.gif></center>
-           <p>
+           만들어진 메뉴로 난수의 생성은
+		   $$
+             y_i = f\left(-1+\frac{3}{n}(i-1)\right)+\varepsilon_i, \quad 
+             \varepsilon_i \stackrel{iid}{\sim} N(0,1/16), \quad i=1,\cdots,n 
+           $$
            을 이용하였다. 여기서 생성되는 자료의 개수는 
            200개이며 난수를 사용하므로 이 메뉴를 선택할 때마다 새로운 자료가 만들어진다.
        </ul>
@@ -61,7 +77,14 @@ A browser with JavaScript enabled is required for this page to operate properly.
        문자를 입력하면 실행하지 않고 에러가 발생한다.<br>
        <ul><li><b>Scatter</b> : 산점도를 그린다.<br>
            <li><b>Draw Real Function</b> : 자료를 생성한 경우에만 나오는 메뉴로 추정의 대상이 되는 함수의 그림을 그린다. 그려지는 함수는
-           <p><center><img src=eqn_01.gif></center><p>
+           	   
+		   $$
+		   f(x) = \left \{ 
+                  \begin{array}{cl} \sin(2\pi x^2) \ &  \quad x \in [0,1]\mbox{ 일 때} \\
+                                     0& \quad x \in [-1,0] \mbox{ 또는 } x \in [1,2] \mbox{ 일 때}
+                  \end{array} \right.
+			$$
+		   
 
            <li><b>Simple Regression</b> : 단순회귀의 그림 및 통계량을 출력한다.<br>
            <ol><li><b>Draw Simple Regression</b> : 단순회귀의 그림 출력.<br>
