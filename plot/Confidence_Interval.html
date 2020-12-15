@@ -16,6 +16,20 @@ A browser with JavaScript enabled is required for this page to operate properly.
   A:active{color:blue; text-decoration:none}
   A:hover{color:gold; text-decoration:none}
 </STYLE>
+<script type="text/javascript">
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
  <h3>모의 실험을 통한 신뢰구간의 이해</h3>
  <b> 모평균에 대한 신뢰구간을 구현</b>
  <ol><li>분산을 알고 있을 때.</li>
@@ -33,7 +47,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
     <li>표본의 크기가 증가하면 신뢰구간의 길이는 작아진다.</li>
    </ul>
    <li>모의 실험의 결론</li>
-   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 100(1-alpha)%이다.</li></ul>
+   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
   <li>분산을 모를 때.</li>
   <ul type=square>
@@ -49,7 +63,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
     <li>분산을 모르므로 모든 신뢰구간의 길이가 다르다.</li>
    </ul>
    <li>모의 실험의 결론</li>
-   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 100(1-alpha)%이다.</li></ul>
+   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
  </ol>
  <hr>
@@ -69,11 +83,11 @@ A browser with JavaScript enabled is required for this page to operate properly.
    <li>모의실험을 통하여 알 수 있는 사실</li>
     <ul type=dot>
       <li>시행회수가 많게 하면 신뢰구간의 길이가 작아진다.
-      <li>신뢰구간은 정규근사를 사용하였다. 그래서 np &gt; 5 또는 n(1-p) &gt; 5
+      <li>신뢰구간은 정규근사를 사용하였다. 그래서 $np > 5$ 또는 $n(1-p) > 5$
           인 경우 신뢰구간의 개수가 신뢰도의 비율에 가깝게 된다.
     </ul>
    <li>모의 실험의 결론</li>
-   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 100(1-alpha)%이다.</li></ul>
+   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
 <hr>
 <a href="javascript:deployJava.launchWebStartApplication('CiProportion.jnlp');">Confidence interval for proportion p</a></p>
