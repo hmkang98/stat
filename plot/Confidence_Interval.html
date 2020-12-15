@@ -9,12 +9,8 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <script type="text/javascript" language="javascript">var s_code=s.t();if(s_code)document.write(s_code)</script>
 <!-- End SiteCatalyst code -->
 <script src="https://www.java.com/js/deployJava.js"></script>
-<STYLE TYPE=TEXT/CSS>
-  B{background-color:dfdfdf;color:blue}
-  A:link{color:blue; text-decoration:none}
-  A:visited{color:blue; text-decoration:none}
-  A:active{color:blue; text-decoration:none}
-  A:hover{color:gold; text-decoration:none}
+<STYLE TYPE="TEXT/CSS">
+   @import url(plot.css);
 </STYLE>
 <script type="text/javascript">
 MathJax = {
@@ -30,7 +26,7 @@ MathJax = {
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
- <h3>모의 실험을 통한 신뢰구간의 이해</h3>
+ <h2>모의 실험을 통한 신뢰구간의 이해</h2>
  <b> 모평균에 대한 신뢰구간을 구현</b>
  <ol><li>분산을 알고 있을 때.</li>
   <ul type=square>
@@ -67,8 +63,10 @@ MathJax = {
   </ul>
  </ol>
  <hr>
-<a href="javascript:deployJava.launchWebStartApplication('CiUnknownSigma.jnlp');">Confidence interval for mean mu when sigma is unknown</a> |
-<a href="javascript:deployJava.launchWebStartApplication('CiKnownSigma.jnlp');">Confidence interval for mean mu when sigma is known</a></p>
+<a href="javascript:deployJava.launchWebStartApplication('CiUnknownSigma.jnlp');">
+<span data-tooltip-text="Java application runs when you click me.">Confidence interval for mean mu when sigma is unknown</span></a> |
+<a href="javascript:deployJava.launchWebStartApplication('CiKnownSigma.jnlp');">
+<span data-tooltip-text="Java application runs when you click me.">Confidence interval for mean mu when sigma is known</span></a></p>
 <hr>
 <br>
 <b>모비율에 대한 신뢰구간의 구현</b>
@@ -90,7 +88,8 @@ MathJax = {
    <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
 <hr>
-<a href="javascript:deployJava.launchWebStartApplication('CiProportion.jnlp');">Confidence interval for proportion p</a></p>
+<a href="javascript:deployJava.launchWebStartApplication('CiProportion.jnlp');">
+<span data-tooltip-text="Java application runs when you click me.">Confidence interval for proportion p</span></a></p>
 <hr>
 <address><font color=blue>hmkang@hallym.ac.kr<font></address>
 

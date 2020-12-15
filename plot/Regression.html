@@ -24,14 +24,10 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-<STYLE TYPE=TEXT/CSS>
-  B{background-color:dfdfdf;color:blue}
-  A:link{color:blue; text-decoration:none}
-  A:visited{color:blue; text-decoration:none}
-  A:active{color:blue; text-decoration:none}
-  A:hover{color:gold; text-decoration:none}
+<STYLE TYPE="TEXT/CSS">
+   @import url(plot.css);
 </STYLE>
-  <b>상관과 회귀 및 산점도</b><p>
+  <h2>상관과 회귀 및 산점도</h2><p>
   이 프로그램은 동적화면에서 산점도와 상관계수의 대응관계비교할 수 있다.
   다음은 이 프로그램 사용법이다.
   <ul>
@@ -51,7 +47,8 @@ MathJax = {
   자동으로 JRE를 설치할 수 있는 장소로 연결해 준다. 펜티엄 4 컴퓨터를 기준으로 이 프로그램 설치의
   소요시간은 약 10분 미만이다.
 <hr>
-<a href="javascript:deployJava.launchWebStartApplication('Regression.jnlp');">Scatter plot, correlation coefficient and simple regression</a>
+<a href="javascript:deployJava.launchWebStartApplication('Regression.jnlp');">
+<span data-tooltip-text="Java application runs when you click me.">Scatter plot, correlation coefficient and simple regression</span></a>
 <hr>
 <body>
 

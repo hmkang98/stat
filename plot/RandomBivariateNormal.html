@@ -1,4 +1,4 @@
-﻿ <!-- Start SiteCatalyst code   -->
+﻿  <!-- Start SiteCatalyst code   -->
 <script type="text/javascript" language="JavaScript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code_download.js"></script>
 <script type="text/javascript" language="JavaScript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code.js"></script>
 <noscript>
@@ -9,29 +9,105 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <script type="text/javascript" language="javascript">var s_code=s.t();if(s_code)document.write(s_code)</script>
 <!-- End SiteCatalyst code -->
 <script src="https://www.java.com/js/deployJava.js"></script>
-<STYLE TYPE=TEXT/CSS>
-  B{background-color:dfdfdf;color:blue}
-  A:link{color:blue; text-decoration:none}
-  A:visited{color:blue; text-decoration:none}
-  A:active{color:blue; text-decoration:none}
-  A:hover{color:gold; text-decoration:none}
+<script type="text/javascript">
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<STYLE TYPE="TEXT/CSS">
+   @import url(plot.css);
 </STYLE>
- <body>
-  <b>이변량 정규분포의 산점도와 상관계수</b><p>
-  이 프로그램은 산점도와 상관계수의 대응관계를 동적 화면에서 비교하는 것으로, 주어진 상관계수에 대하여 
-  산점도의 분포가 어떻게 되는지 알 수 있다. 
-  여기서 사용된 자료는 이변량 정규분포(Bivariate Normal Distribution)에서 난수를 추출하였다. 
-  상관계수는 두 변수에 대한 선형성의 척도로 -1 ~ 1 사이의 값으로 표현되며, 양수는 양의 상관관계,
-  음수는 음의 상관관계를 의미한다. <br>
-  이 프로그램의 사용방법은 "Input-&gt;Plot Correlation Coefficient" 메뉴를 실행하면 입력창이 나타난다. 
-  생성된 입력차에 생성할 자료의 갯수를 입력하고 확인 버튼을 누르면 두 번째 입력창이 나타난다. 이 창에는
-  적절한 상관계수를 입력한다.<br>   
-  이 프로그램을 사용시 요구사항은 JRE가 설치되어 있어야 한다. 만일 JRE가 설치되지 않은 컴퓨터는
-  자동으로 JRE를 설치할 수 있는 장소로 연결해 준다. 펜티엄 4 컴퓨터를 기준으로 이 프로그램 설치의
-  소요시간은 약 10분 미만이다.
-<hr>
-<a href="javascript:deployJava.launchWebStartApplication('RandomBivariateNormal.jnlp');">simulate a scatter plot and correlation coefficient</a>
-<hr>
+<h2>이변량 정규분포의 산점도와 상관계수</h2>
+이 전자교재는 <b>산점도</b>와 <b>표본상관계수</b>의 대응관계를 동적 화면에서 비교하는 것으로, 주어진 상관계수에 대하여 
+  산점도의 분포가 어떻게 되는지 알 수 있다. <p>
+  <b>표본상관계수</b>는
+  <ol> 
+  <li> 두 변수에 대한 <b>선형성의 척도</b>로 -1 ~ 1 사이의 값으로 표현되며
+  <li> 양수는 양의 상관관계, 음수는 음의 상관관계를 의미하고 
+  <li> 0은 두 변수간 선형성이 없음을 의미한다. 즉  두 변수는 비 선형성 관계가 있을  수도 있다. 
+  </ol>
+  표본상관계수를 입력하여 산점도 제작에 사용한 자료는 <b>이변량 정규분포(Bivariate Normal Distribution)</b>에서 
+  <b>난수(Random Number)</b>를 추출하였다. 
+  이변량 정규분포에서 난수를 생성하는 과정은 다음과 같다
+  <ol>
+  <li>Box-Muller 변환으로 서로 독립인 표준정규분포 ${\bf Z}= (Z_1, Z_2)^T$를 만든다.<br>
+   $$
+   \begin{eqnarray}
+	 Z_1 & = & \sqrt{-2\log U_1}\cos(2\pi U_2) \\
+     Z_2 & = & \sqrt{-2\log U_1}\sin(2\pi U_2)
+   \end{eqnarray}
+   $$	 
+  <li>분산-공분산 행렬 ${\bf \Sigma}$은 양정치 행렬이고 대칭 행렬이므로 Cholesky 분해가 가능하다.<br>
+$$
+\begin{eqnarray}
+{\bf \Sigma} &=&
+        \left [ \begin{array}{cc}  1 & \rho \\
+                                 \rho & 1 
+                 \end{array} 
+        \right ] \nonumber \\
+       &=&
+        \left [ \begin{array}{cc}  1 & 0 \\
+                                 \rho & \sqrt{1-\rho^2} 
+                 \end{array} 
+        \right ]\cdot
+        \left [ \begin{array}{cc}  1 & \rho \\
+                                   0 & \sqrt{1-\rho^2} 
+                 \end{array} 
+        \right ] \nonumber \\
+       &=& {\bf CC}^T  \nonumber
+\end{eqnarray}
+$$
+  <li>이변량 정규분포의 확률벡터 ${\bf X}$는 다음과 같이 나타내며<br>
+$$
+\begin{eqnarray}
+{\bf X}&=&{\bf CZ} \\
+     \left [ \begin{array}{c}
+                 X_1 \\
+                 X_2
+             \end{array}
+     \right ] \nonumber
+     &=& 
+     \left [ \begin{array}{c}
+                Z_1 \\
+                \rho Z_1 + \sqrt{1-\rho^2}Z_2
+             \end{array} 
+     \right ] \nonumber
+\end{eqnarray}
+$$
+<li>확률벡터 ${\bf X}$의 분산-공분산 행렬 ${\bf \Sigma}$은 다음과 같다.<br>
+$$Var({\bf X}) = {\bf CIC}^T = {\bf CC}^T = {\bf\Sigma} $$
+</ol>
+  
+  <h3>시스템 요구 사항</h3>
+   이 사이트에 구현된 프로그램을 사용하려면 <b>JRE(Java Runtime Environment)</b>가 설치되어 있어야 한다. 
+   만일 JRE가 설치되지 않은 컴퓨터는 <b>자동</b>으로 JRE를 <b>설치</b>할 수 있는 장소로 연결해 주고, 
+   JRE가 최신 버전이 아닌 경우에는 최신 버전의 JRE로 <b>업그레이드</b>해 준다. JRE 설치에 걸리는 시간과 업그레이드에 
+   걸리는 시간은 시스템에 따라 차이는 있지만 약 몇 분 정도 소요된다.
+  <hr>
+  <a href="javascript:deployJava.launchWebStartApplication('RandomBivariateNormal.jnlp');">
+  <span data-tooltip-text="Java application runs when you click me.">simulate a scatter plot and correlation coefficient</span></a>
+  <hr>
+<h3>전자교재 사용방법</h3> 
+  <ol><li><b>Input</b>
+      <ul><li><b>Plot Correlation Coefficient</b> : 이 메뉴를 선택하면
+          <ol><li> 선점도 작성에 필요한 자료의 개수를 입력하는 팝업창에 자료의 개수를 입력하고
+                   "확인" 버튼을 누르면
+              <li> 상관계수를 입력하는 팝업창이 나타나고, 여기에 상관계수의 범위에 해당되는 -1에서 1 사이의 
+                   실수를 입력하면  
+			  <li> 입력한 자료의 수와 상관계수에 대한 이변량 정규분포의 난수를 발생하여 그 자료로 산점도와 단순회귀직선을 그려준다.
+
+          </ol>
+      </ul>
+  </ol>
+  <hr>
   <address><font color=blue>hmkang@hallym.ac.kr</font></address>
   </body>      
-
