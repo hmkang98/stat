@@ -1,0 +1,20 @@
+ <head>
+<STYLE TYPE="TEXT/CSS">
+   @import url(plot.css);
+</STYLE>
+</head>
+<h3>▶▶▶ 자바로 만든 통계프로그램 ◀◀◀</h3>
+이 사이트에 소개한 프로그램은 자바프로그램을 설치하고 보안 사항을 설정해야 올바로 실행됩니다.<br>
+다음은
+<a href=javains.html><span data-tooltip-text="클릭하면 자바 응용프로그램 실행에 필요한 설정을 확인할 수 있습니다.">자바 실행에 필요한 프로그램과 설정</span></a>입니다.
+<ol>
+<li><a href=plot/Normal.html target="_blank"><span data-tooltip-text="클릭하면 정규분포 그래프가 나타납니다.">정규분포의 분위수, 신뢰도</span></a> 
+<li><a href=plot/Student_t.html target="_blank"><span data-tooltip-text="클릭하면 t-분포 그래프가 나타납니다.">t-분포의 분위수, 신뢰도</span></a>
+<li><a href=plot/Confidence_Interval.html target="_blank"><span data-tooltip-text="클릭하면 신뢰구간 모의실험 프로그램이 실행됩니다.">신뢰구간</span></a> 
+<li><a href=plot/t-test.html target="_blank"><span data-tooltip-text="클릭하면 일표본과 이표본에 대한 모수에 대한 추정과 검정 프로그램이 실행됩니다.">추정과 검정</span></a>
+<li><a href=plot/RandomBivariateNormal.html target="_blank"><span data-tooltip-text="클릭하면 상관계수와 단순회귀 그리고 산점도 프로그램이 실행됩니다.">상관계수와 단순회귀 및 산점도 - 모의실험</span></a> 
+<li><a href=plot/Regression.html target="_blank"><span data-tooltip-text="클릭하면 상관계수와 단순회귀 그리고 산점도 프로그램이 실행됩니다.">상관계수와 단순회귀 및 산점도 - 실제자료입력</span></a> 
+<li><a href=plot/Sample.html target="_blank"><span data-tooltip-text="클릭하면 여러 회귀분석 모형을 비교하는 프로그램이 실행됩니다.">회귀분석 모형비교</span></a> 
+<li><a href=plot/Power.html target="_blank"><span data-tooltip-text="클릭하면 유의확률과 검정력 프로그램이 실행됩니다.">유의확률과 검정력</span></a> 
+<!-- <li><a href=zsize/index.html target="_blank">평균과 비율검정에서 표본수와 검정력 계산</a> -->
+</ol>
