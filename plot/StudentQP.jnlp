@@ -1,9 +1,7 @@
 ﻿<!xml version="1.0" encoding="EUC-KR"?> 
 	<!-- JNLP File for JFrame Demo Application --> 
 	<jnlp 
-  	  spec="1.0+" 
-	  codebase="file:///C:/Users/xnote/Desktop/T_Dist" 
-  	  href="StudentQP.jnlp"> 
+  	  spec="1.0+" href="StudentQP.jnlp"> 
   	  <information> 
     	    <title> Confidence Interval for mu when sigma is known</title> 
     	    <vendor>Department of Statistics Hallym Univ.</vendor> 

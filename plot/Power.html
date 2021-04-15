@@ -1,4 +1,5 @@
-﻿ <!-- Start SiteCatalyst code   -->
+﻿<head> 
+ <!-- Start SiteCatalyst code   -->
 <script type="text/javascript" language="JavaScript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code_download.js"></script>
 <script type="text/javascript" language="JavaScript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code.js"></script>
 <noscript>
@@ -9,11 +10,55 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <script type="text/javascript" language="javascript">var s_code=s.t();if(s_code)document.write(s_code)</script>
 <!-- End SiteCatalyst code -->
 <script src="https://www.java.com/js/deployJava.js"></script>
+<script type="text/javascript">
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 <STYLE TYPE="TEXT/CSS">
    @import url(plot.css);
 </STYLE>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+</head>
+<body>
   <h2>유의확률과 검정력</h2>
   <b>유의확률(p-value)</b>과 <b>검정력(power)</b>은 통계적 추론 중 <b>검정(testing)</b>에서 중요한 이론이다.
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
+<script type="text/tikz">
+\begin{tikzpicture}[samples=100, xscale=0.9,yscale=6]
+\draw plot[domain=-3.5:3.5](\x,{1/sqrt(2*pi)* exp(-\x*\x/2)});
+\draw [pattern=dots]plot[domain=1.8:3.5](\x,{1/sqrt(2*pi)* exp(-\x*\x/2)}) |-(1.8,0);
+\draw plot[domain=-3.5:3.5](\x+3,{1/sqrt(2*pi)* exp(-\x*\x/2)});
+\draw [pattern=crosshatch dots]plot[domain=-3.5:-1.2](\x+3,{1/sqrt(2*pi)* exp(-\x*\x/2)}) |-(1.8,0);
+\draw (-3.5,0) --(6.5,0);
+\draw[dotted] (0,0)--(0,0.4) node[above]{$H_0 : \mu=\mu_0$};
+\draw[dotted] (3,0)--(3,0.4) node[above]{$H_1 : \mu=\mu_a$};
+\draw[->] (3.5,0.2)--(2.1,0.015);
+\draw[->] (-0.5,0.2)--(1.5,0.015);
+\draw (0,0) node[below]{$\mu_{0}$};
+\draw (3,0) node[below]{$\mu_{a}$};
+\draw (3.5,0.2) node[above]{\scriptsize{$\alpha$}};
+\draw (-0.5,0.2) node[above]{\scriptsize{$\beta$}};
+\draw (1.8,0)--(1.8,0);
+\draw[<-] (1.8,0)--(1.8,-0.15) node[below]{$c=\mu_0 +z_\alpha \frac{\sigma}{\sqrt{n}}=\mu_a -z_\beta \frac{\sigma}{\sqrt{n}}$};
+\draw[->] (1.8,-0.1)--(2.3,-0.1) node[right]{rejection region for $H_0$};
+\draw[->] (1.8,-0.1)--(1.3,-0.1) node[left]{acceptance region for $H_0$};
+\end{tikzpicture}
+</script>
   여기에 제작된 프로그램은 
   <ul><li><b>대립가설(alternative hypothesis, H1</b>)과 
       <li> <b>유의확률</b>을 
@@ -25,11 +70,6 @@ A browser with JavaScript enabled is required for this page to operate properly.
   </ul>마우스 포인터가 옮겨지면 포인터의 모양이 
   <b>손모양</b>(<img src=hand_cursor.jpg width=20>)으로 변한다. 이 때 마우스를 클릭하여 <b>드래그</b>하면 그래프나 임계점이 변하면서, 
   <b>유의확률</b>과 <b>검정력</b>이 변하는 것을 확인 할 수 있다.<br>
-
-  이 프로그램을 사용시 요구사항은 JRE가 설치되어 있어야 한다. 만일 JRE가 설치되지 않은 컴퓨터는
-  자동으로 JRE를 설치할 수 있는 장소로 연결해 준다. 펜티엄 4 컴퓨터를 기준으로 이 프로그램 설치의
-  소요시간은 약 10분 미만이다.<br>
-  <body>
   <hr>
   <a href="javascript:deployJava.launchWebStartApplication('Power.jnlp');">
   <span data-tooltip-text="Java application runs when you click me.">Graph of  P-value and power</span></a>
