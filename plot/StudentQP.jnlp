@@ -1,6 +1,6 @@
 ﻿<!xml version="1.0" encoding="EUC-KR"?> 
 	<!-- JNLP File for JFrame Demo Application --> 
-	<jnlp spec="1.0+" href="StudentQP.jnlp"> 
+	<jnlp spec="1.0+" codebase="https://hmkang98.github.io/stat/plot/" href="StudentQP.jnlp"> 
   	  <information> 
      	    <title> A quantile and P-value for the t distribution with a degree of freedom</title> 
     	    <vendor>Department of Statistics Hallym Univ.</vendor> 

@@ -7,7 +7,6 @@
   	  <information> 
     	    <title> Test for difference means</title> 
     	    <vendor>Department of Statistics Hallym Univ.</vendor> 
-    	      <homepage href="http://pluto.hallym.ac.kr"/> 
               <icon width=50 height=70 href="javalogo.gif"/>
     	      <description>Test for difference means</description> 
     	      <description kind="short">Test for difference means</description> 

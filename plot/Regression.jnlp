@@ -5,7 +5,6 @@
   <information> 
     <title> Corrlelation Coefficient and Simple Regression</title> 
     <vendor>Department of Statistics Hallym Univ.</vendor> 
-      <homepage href="http://pluto.hallym.ac.kr"/> 
       <icon width=50 height=70 href="javalogo.gif"/>
       <description>Corrlelation Coefficient and Simple Regression</description> 
       <description kind="short">Corr & Reg</description> 
