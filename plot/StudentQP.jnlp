@@ -1,15 +1,17 @@
 ﻿<!xml version="1.0" encoding="EUC-KR"?> 
 	<!-- JNLP File for JFrame Demo Application --> 
-	<jnlp spec="1.0+" href="StudentQP.jnlp"> 
+	<jnlp 
+  	  spec="1.0+" href="StudentQP.jnlp"> 
   	  <information> 
-    	    <title> Confidence Interval for mu when sigma is known</title> 
+     	    <title> A quantile and P-value for the t distribution with degree of freedom</title> 
+   	    <title> Confidence Interval for mu when sigma is known</title> 
     	    <vendor>Department of Statistics Hallym Univ.</vendor> 
     	      <homepage href="http://pluto.hallym.ac.kr"/> 
               <icon width=50 height=70 href="javalogo.gif"/>
-    	      <description>Confidence Interval for mu when sigma is known</description> 
-    	      <description kind="short">CI known sigma</description> 
-              <description kind="one-line"> CI known sigma </description>
-              <description kind="tooltip">CI known sigma</description>
+     	      <description>Quantile and P-value for the student t</description> 
+    	      <description kind="short">Quantile and P-value for the student t</description> 
+              <description kind="one-line">Quantile and P-value for the student t</description>
+              <description kind="tooltip">Quantile and P-value for the student t</description>
     	    <offline-allowed/> 
   	  </information> 
   	  <!-- allow all permissions -->
