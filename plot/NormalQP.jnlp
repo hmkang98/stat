@@ -5,7 +5,6 @@
   	  <information> 
     	    <title> A quantile and P-value for the normal distribution with a mean and SD sigma</title> 
     	    <vendor>Department of Statistics Hallym Univ.</vendor> 
-    	      <homepage href="http://pluto.hallym.ac.kr"/> 
               <icon width=50 height=70 href="javalogo.gif"/>
     	      <description>Quantile and P-value for the normal</description> 
     	      <description kind="short">Quantile and P-value for the normal</description> 

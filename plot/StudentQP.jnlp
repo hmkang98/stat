@@ -1,12 +1,9 @@
 ﻿<!xml version="1.0" encoding="EUC-KR"?> 
 	<!-- JNLP File for JFrame Demo Application --> 
-	<jnlp 
-  	  spec="1.0+" href="StudentQP.jnlp"> 
+	<jnlp spec="1.0+" href="StudentQP.jnlp"> 
   	  <information> 
-     	    <title> A quantile and P-value for the t distribution with degree of freedom</title> 
-   	    <title> Confidence Interval for mu when sigma is known</title> 
+     	    <title> A quantile and P-value for the t distribution with a degree of freedom</title> 
     	    <vendor>Department of Statistics Hallym Univ.</vendor> 
-    	      <homepage href="http://pluto.hallym.ac.kr"/> 
               <icon width=50 height=70 href="javalogo.gif"/>
      	      <description>Quantile and P-value for the student t</description> 
     	      <description kind="short">Quantile and P-value for the student t</description> 
@@ -19,8 +16,8 @@
 	    <all-permissions/> 
 	  </security>   	  
   	  <resources> 
-	    <j2se version="1.7+"/> 
+	    <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/> 
             <jar href="SignedStudentQP.jar"/> 
           </resources> 
-          <application-desc name=SignedStudentQP.jar width=1 height=1 main-class="StudentQP"/> 
+          <application-desc name=SignedStudentQP.jar main-class="StudentQP"/> 
           </jnlp>
