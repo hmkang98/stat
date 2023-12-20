@@ -48,6 +48,6 @@ MathJax = {
   <a href="javascript:deployJava.launchWebStartApplication('Power.jnlp');">
   <span data-tooltip-text="Java application runs when you click me.">Graph of  P-value and power</span></a>
     <hr>
-  <address><font color=blue>hmkang98@naver.com</font></address>
+  <address><font color=blue>hmkang@hallym.ac.kr</font></address>
   </body>      
 

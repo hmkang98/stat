@@ -55,5 +55,5 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <a href="javascript:deployJava.launchWebStartApplication('TwoSamplesTest.jnlp');">
 <span data-tooltip-text="Java application runs when you click me.">Run a estimation and testing for difference the means</span></a>
 <hr>
-<address><font color=blue>hmkang98@naver.com<font></address>
+<address><font color=blue>hmkang@hallym.ac.kr<font></address>
 
