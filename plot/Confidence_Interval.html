@@ -29,37 +29,37 @@ MathJax = {
  <h2>모의 실험을 통한 신뢰구간의 이해</h2>
  <b> 모평균에 대한 신뢰구간을 구현</b>
  <ol><li>분산을 알고 있을 때.</li>
-  <ul type=square>
+  <ul type=disc>
    <li>분산을 알고 있다고 가정하였고, 분포는 정규분포를 사용하였다.</li>
    <li>사용방법</li>
-    <ul type=dot><li>&quot;분산을 알고 있을 때&quot; 버튼을 누른다.</li>
-        <li>신뢰도: 0 보다 크고 100 보다 작은 실수 입력</li>
-        <li>분 산 : 0 보다 큰 실수 입력</li>
-        <li>표본의 크기 : 1 이상의 자연수 입력</li>
+    <ul type=disc><li><b>분산을 알고 있을 때</b> 버튼을 누른다.</li>
+        <li>신뢰도: <b>0 보다 크고 100 보다 작은 실수 입력</b></li>
+        <li>분 산 : <b>0 보다 큰 실수 입력</b></li>
+        <li>표본의 크기 : <b>1 이상의 자연수 입력</b></li>
     </ul>
    <li>모의실험을 통하여 알 수 있는 사실</li>
-   <ul type=dot>
+   <ul type=disc>
     <li> 분산이 크게하면 신뢰구간의 길이가 커진다.</li>
     <li>표본의 크기가 증가하면 신뢰구간의 길이는 작아진다.</li>
    </ul>
    <li>모의 실험의 결론</li>
-   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
+   <ul type=disc><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
   <li>분산을 모를 때.</li>
-  <ul type=square>
+  <ul type=disc>
    <li>분산을 모른다고 가정하였고,분포는 t-분포를 사용하였다.</li>
    <li>사용방법</li>
-    <ul type=dot><li>&quot;분산을 모를 때&quot; 버튼을 누른다.</li> 
-        <li>신뢰도: 0 보다 크고 100 보다 작은 실수 입력</li>
-        <li>표본의 크기 : 1 이상의 자연수 입력</li>
+    <ul type=disc><li><b>분산을 모를 때</b> 버튼을 누른다.</li> 
+        <li>신뢰도: <b>0 보다 크고 100 보다 작은 실수</b> 입력</li>
+        <li>표본의 크기 : <b>1 이상의 자연수</b> 입력</li>
     </ul>
    <li>모의실험을 통하여 알 수 있는 사실</li>
-   <ul type=dot>
+   <ul type=disc>
     <li>표본의 크기를 크게하면 신뢰구간의 길이가 작아진다.</li>
     <li>분산을 모르므로 모든 신뢰구간의 길이가 다르다.</li>
    </ul>
    <li>모의 실험의 결론</li>
-   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
+   <ul type=disc><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
  </ol>
  <hr>
@@ -70,22 +70,22 @@ MathJax = {
 <hr>
 <br>
 <b>모비율에 대한 신뢰구간의 구현</b>
- <ul type=square>
+ <ul type=disc>
   <li>이항분포에서 성공할 확률 p에 대한 신뢰구간을 구현하였다.
   <li>사용방법
-    <ul type=dot>
-      <li>실행 회수 : 2이상의 자연수를 입력한다.
-      <li>확 률 : 0과 1사이의 값을 입력한다.
-      <li>신뢰도 : 0과 100사이의 값을 입력한다.
+    <ul type=disc>
+      <li>실행 회수 : <b>2이상의 자연수</b>를 입력한다.
+      <li>확 률 : <b>0과 1사이의 값</b>을 입력한다.
+      <li>신뢰도 : <b>0과 100사이의 값</b>을 입력한다.
     </ul>
    <li>모의실험을 통하여 알 수 있는 사실</li>
-    <ul type=dot>
+    <ul type=disc>
       <li>시행회수가 많게 하면 신뢰구간의 길이가 작아진다.
       <li>신뢰구간은 정규근사를 사용하였다. 그래서 $np > 5$ 또는 $n(1-p) > 5$
           인 경우 신뢰구간의 개수가 신뢰도의 비율에 가깝게 된다.
     </ul>
    <li>모의 실험의 결론</li>
-   <ul type=dot><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
+   <ul type=disc><li>확률적으로 모수가 신뢰구간에 포함될 확률은 $100(1-\alpha)%$이다.</li></ul>
   </ul>
 <hr>
 <a href="javascript:deployJava.launchWebStartApplication('CiProportion.jnlp');">
