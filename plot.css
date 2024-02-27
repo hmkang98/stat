@@ -1,39 +1,14 @@
 ﻿B{color:blue}
-A:link{color:blue; text-decoration:none}
+A:link{animation: rainbow 4s 1; text-decoration:none}
 A:visited{color:blue; text-decoration:none}
 A:active{color:blue; text-decoration:none}
-A:hover{color:gold; text-decoration:none;font-weight:1000}
-[data-tooltip-text]:hover {
-	position: relative;
+A:hover{animation: rainbow 4s infinite;font-weight:1000}
+
+@keyframes rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: violet; }
 }
-
-[data-tooltip-text]:hover:after {
-	background-color: #000000;
-	background-color: rgba(0, 0, 0, 0.8);
-
-	-webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
-	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
-	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-
-	color: #FFFFFF;
-	font-size: 12px;
-	content: attr(data-tooltip-text);
-
-  margin-bottom: 10px;
-	top: 130%;
-	left: 0;    
-	padding: 7px 12px;
-	position: absolute;
-	width: auto;
-	min-width: 50px;
-	max-width: 300px;
-	word-wrap: break-word;
-
-	z-index: 9999;
-}
-
-

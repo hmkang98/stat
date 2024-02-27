@@ -1,8 +1,8 @@
 ﻿B{color:blue}
-A:link{animation: rainbow 4s 1; text-decoration:none}
+A:link{animation: rainbow 4s infinite; text-decoration:none}
 A:visited{color:blue; text-decoration:none}
 A:active{color:blue; text-decoration:none}
-A:hover{animation: rainbow 3s infinite;font-weight:1000}
+A:hover{animation: rainbow 2s 1;font-weight:1000}
 
 @keyframes rainbow {
     0% { color: red; }
