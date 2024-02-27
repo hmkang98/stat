@@ -1,5 +1,5 @@
 ﻿B{color:blue}
-A:link{color:blue; text-decoration:none}
+A:link{animation: rainbow 2s infinite; text-decoration:none}
 A:visited{color:blue; text-decoration:none}
 A:active{color:blue; text-decoration:none}
 A:hover{animation: rainbow 2s infinite;font-weight:1000}
